@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Strategy
 {
@@ -10,13 +6,22 @@ namespace Strategy
     {
         static void Main(string[] args)
         {
-            Context context;
+            SortedList studentRecords = new SortedList();
 
-            context = new Context(new ConcreteStrategyA());
-            context.Sort();
+            studentRecords.Add("Samual");
+            studentRecords.Add("Jimmy");
+            studentRecords.Add("Sandra");
+            studentRecords.Add("Vivek");
+            studentRecords.Add("Anna");
 
-            context = new Context(new ConcreteStrategyB());
-            context.Sort();
+            studentRecords.SetSortStrategy(new QuickSort());
+            studentRecords.Sort();
+
+            studentRecords.SetSortStrategy(new ShellSort());
+            studentRecords.Sort();
+
+            studentRecords.SetSortStrategy(new MergeSort());
+            studentRecords.Sort();
 
             Console.ReadKey();
         }
