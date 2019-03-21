@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Builder.Product;
+﻿using Builder.Product;
 
 namespace Builder.Builder
 {
@@ -17,10 +12,10 @@ namespace Builder.Builder
     {
         public Animal animal;
 
-        public abstract void BulidHead();
-        public abstract void BulidBody();
-        public abstract void BulidArm();
-        public abstract void BulidLeg();
-        public abstract void BulidTail();
+        public abstract void BuildHead();
+        public abstract void BuildBody();
+        public abstract void BuildArm();
+        public abstract void BuildLeg();
+        public abstract void BuildTail();
     }
 }

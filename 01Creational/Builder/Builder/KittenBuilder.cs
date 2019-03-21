@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Builder.Product;
+﻿using Builder.Product;
 
 namespace Builder.Builder
 {
@@ -17,27 +12,27 @@ namespace Builder.Builder
             animal = new Kitten();
         }
 
-        public override void BulidHead()
+        public override void BuildHead()
         {
             animal.Head = "Kitten's Head has been built";
         }
 
-        public override void BulidBody()
+        public override void BuildBody()
         {
             animal.Body = "Kitten's Body has been built";
         }
 
-        public override void BulidArm()
+        public override void BuildArm()
         {
             animal.Arm = "Kitten's Arm has been built";
         }
 
-        public override void BulidLeg()
+        public override void BuildLeg()
         {
             animal.Leg = "Kitten's Leg has been built";
         }
 
-        public override void BulidTail()
+        public override void BuildTail()
         {
             animal.Tail = "Kitten's Tail has been built";
         }

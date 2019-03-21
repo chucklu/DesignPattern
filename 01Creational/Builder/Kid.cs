@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Builder.Builder;
+﻿using Builder.Builder;
 
 namespace Builder
 {
@@ -14,13 +9,17 @@ namespace Builder
         //construct process to build an animal object, 
         //after this process completed, a object 
         //will be consider as a ready to use object.
+        /// <summary>
+        /// This a director
+        /// </summary>
+        /// <param name="animalBuilder"></param>
         public void MakeAnimal(AnimalBuilder animalBuilder)
         {
-            animalBuilder.BulidHead();
-            animalBuilder.BulidBody();
-            animalBuilder.BulidArm();
-            animalBuilder.BulidLeg();
-            animalBuilder.BulidTail();
+            animalBuilder.BuildHead();
+            animalBuilder.BuildBody();
+            animalBuilder.BuildArm();
+            animalBuilder.BuildLeg();
+            animalBuilder.BuildTail();
         }
     }
 }
