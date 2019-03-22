@@ -1,23 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
     class Program
     {
+        /// <summary>
+        /// Define an interface for creating an object,
+        /// but let subclasses decide which class to instantiate.
+        /// Factory Method lets a class defer instantiation to subclasses. 
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
-        {
-            Creator creator;//客户端拥有一个抽象Creator的引用
-            Parent parent;//客户端不确定返回的类型,所以需要用父类来接收创建出来的对象
+        { 
+            // Note: constructors call Factory Method
+            Document[] documents = new Document[2];
+            documents[0] = new Resume();
+            documents[1] = new Report();
 
-            creator = new CreatorA();//通过Creator的子类来实例化
-            parent = creator.Create();
 
-            creator = new CreatorB();
-            parent = creator.Create();
+
+            // Display document pages
+            foreach (Document document in documents)
+            {
+
+                Console.WriteLine("\n" + document.GetType().Name + "--");
+
+                foreach (Page page in document.Pages)
+
+                {
+
+                    Console.WriteLine(" " + page.GetType().Name);
+
+                }
+
+            }
+
 
             Console.ReadKey();
         }
