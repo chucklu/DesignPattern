@@ -2,6 +2,7 @@
 {
     /// <summary>
     /// The 'Product' abstract class
+    /// defines the interface of objects the factory method creates
     /// </summary>
     abstract class Page
     {
