@@ -25,7 +25,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "04Others\S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectPool", "04Others\ObjectPool\ObjectPool.csproj", "{6802FAC4-EC2D-43E5-9493-593005F76AA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "02Structural\Facade\Facade.csproj", "{1B5ADFCC-68B0-41DE-8E01-55C96E368820}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "02Structural\Facade\Facade.csproj", "{1B5ADFCC-68B0-41DE-8E01-55C96E368820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "03Behavior\Mediator\Mediator.csproj", "{8BA5CC31-FF74-4B32-BA39-6045C71DB5AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{1B5ADFCC-68B0-41DE-8E01-55C96E368820}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B5ADFCC-68B0-41DE-8E01-55C96E368820}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B5ADFCC-68B0-41DE-8E01-55C96E368820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA5CC31-FF74-4B32-BA39-6045C71DB5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA5CC31-FF74-4B32-BA39-6045C71DB5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA5CC31-FF74-4B32-BA39-6045C71DB5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA5CC31-FF74-4B32-BA39-6045C71DB5AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{EFF64FF0-B5CC-48C5-9BC8-00245125BDC8} = {72137778-B165-4296-8F01-E9CDA26F3107}
 		{6802FAC4-EC2D-43E5-9493-593005F76AA9} = {72137778-B165-4296-8F01-E9CDA26F3107}
 		{1B5ADFCC-68B0-41DE-8E01-55C96E368820} = {E027E54A-A2CE-40D0-8605-4AF9807AFF79}
+		{8BA5CC31-FF74-4B32-BA39-6045C71DB5AD} = {FAF9FB8A-1F6E-4184-92C5-2B9295210138}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4502C428-2CA6-405E-99BB-0A636218BE4A}
